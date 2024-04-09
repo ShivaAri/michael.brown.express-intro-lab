@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MST3K Episodes I have seen!</title>
+</head>
+<body>
+  <h1>MST3K Episodes Witnessed</h1>
+  <ul>
+    <% mst3kEpisodes.forEach(mst3kEpisode => { %>
+      <li>
+        <%= mst3kEpisode.text %>
+        -
+        <%= mst3kEpisode.watched ? 'true' : 'false' %>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
